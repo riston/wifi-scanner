@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h2 #{title}: #{spot.essid}
+  div
+    p Channel: #{spot.channel}
+    p Frequency: #{spot.frequency} GHz
+    p Encryption: #{spot.encryptionKey}
+    p Essid: #{spot.essid || '"Hidden"'}
+    p Address: #{spot.address}
+
+  div#signalChart
+
+  input(type='hidden',id='address',value='#{spot.address}')
+
+append pageScript
+    script(src='/javascripts/chart.js')
+    script(src='https://raw.github.com/timrwood/moment/1.7.2/min/moment.min.js')

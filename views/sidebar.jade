@@ -1,0 +1,5 @@
+h2 Select spot(#{addresses.length}):
+ul
+  each address in addresses
+    li 
+      a(href="/address/#{address}") #{address}

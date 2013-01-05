@@ -1,0 +1,32 @@
+{
+  "name": "wifi-scanner",
+  "description": "Local wifi scanning and history viewer",
+  "version": "0.1.0",
+  "author": {
+    "name": "Risto Novik",
+    "email": "est.risto@gmail.com"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/riston/serp-tool/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "lib/wifi",
+  "engines": {
+    "node": ">= 0.6.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt": "~0.3.17"
+  },
+  "dependencies": {
+    "mongodb-wrapper": "0.4.0",
+    "express": "3.0.3",
+    "jade": "*",
+    "less-middleware": "*"
+  },
+  "keywords": []
+}

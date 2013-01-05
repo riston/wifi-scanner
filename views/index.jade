@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h2= title
+
+  p 2.4 GHz Wi-Fi channels (802.11b,g WLAN). Picture from 
+      a(href='http://en.wikipedia.org/wiki/File:2.4_GHz_Wi-Fi_channels_(802.11b,g_WLAN).png') wiki.
+
+  p In use channels: 
+    span #{channels.sort()}
+
+  p Frequencies:
+    span #{frequencies.sort()}
+
+  p
+    img(src='/images/wlan.png',width='700',height='200') No picture
