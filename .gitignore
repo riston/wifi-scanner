@@ -7,7 +7,8 @@ lib-cov
 *.pid
 *.gz
 
+.env
 conf.js
-.idea
+.idea/
 node_modules
 npm-debug.log

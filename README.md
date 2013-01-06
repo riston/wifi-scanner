@@ -1,4 +1,4 @@
-# wifi
+# Wifi scanner
 
 Local wifi scanning and history viewer
 
@@ -9,21 +9,32 @@ Scanner uses the _iwlist_ CLI program which also requires the root permissions.
 
 To view the sent data there is for that web application based on the Express. 
 
+Before running application make sure to change the _conf.sample.js_ to _conf.js_ also change the parameters inside.
+
 Both parts can be run separatly:
 ```javascript
 sudo node backgroundJob.js // Background scanner
 
-node app.js // This the web application
+node app.js // This the web application, runs on port 3000
 ```
 
-## Documentation
-_(Coming soon)_
+## Stack
+Database MongoDB, I used the online hosting from Mongolab.com
+Node.js and packages
+  * Express.js
+  * mongodb-wrapper - thin layer for database to hide the ugly cb hell and the connection init
+  * lesscss
+  * jade
 
-## Examples
-_(Coming soon)_
+Client side:
+  * JQuery
+  * Moment - great date - time manipulation library
+  * g.raphaeljs - for line chart
 
-## Contributing
-In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [grunt](https://github.com/gruntjs/grunt).
+
+## Screenshots
+![Start page](/screen/example3.png "Home page of wifi scanner")
+![Wifi spot](/screen/example1.png "View of one wifi spot")
 
 ## Release History
 _(Nothing yet)_
