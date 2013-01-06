@@ -33,8 +33,8 @@ Client side:
 
 
 ## Screenshots
-![Start page](/screen/example3.png "Home page of wifi scanner")
-![Wifi spot](/screen/example1.png "View of one wifi spot")
+![Start page](https://raw.github.com/riston/wifi-scanner/master/screen/example3.png)
+![Wifi spot](https://raw.github.com/riston/wifi-scanner/master/screen/example1.png)
 
 ## Release History
 _(Nothing yet)_
